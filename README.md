@@ -46,6 +46,26 @@ In this exercise you will:
 # Paste here the sequence of git commands you ran
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
+git clone https://github.com/ClaudePaola6/301394c2-6efb-4677-aaff-47091fb8145d.git
+cd 301394c2-6efb-4677-aaff-47091fb8145d
+
+git checkout -b feature-1
+
+echo "This feature is just a test." > feature.txt
+git add feature.txt
+
+git config --global user.name "Claude Metchi sameza"
+git config --global user.email "claude.metchi-sameza@stud.thga.de"
+
+git commit -m "Add feature.txt for testing"
+
+git checkout master
+
+Updating 64e707f..78c36d6
+Fast-forward
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
 
 ---
 
