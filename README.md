@@ -46,7 +46,22 @@ In this exercise you will:
 # Paste here the sequence of git commands you ran
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
+ git clone https://github.com
+  git checkout -b feature-1
+   echo "This feature is just a test." > feature.txt
+   git add feature.txt
+    git commit -m "Add feature.txt for testing"
+/ClaudePaola6/301394c2-6efb-4677-aaff-47091fb8145d.git
+git config --global user.name "Claude Metchi sameza"
+git config --global user.email "claude.metchi-sameza@stud.thga.de"
+ git checkout master
+  git merge feature-1
 
+  Updating 64e707f..78c36d6
+Fast-forward
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
 ---
 
 ### Task 2: Bare Repository on an SSH Server
@@ -69,7 +84,21 @@ In this exercise you will:
 ```bash
 # Paste here the push & clone commands and outputs
 ```
+git remote add origin-ssh claudemetchisameza@128.140.85.215:~/repos/myproject.git
+ git remote remove origin-ssh
+ git remote add origin-ssh claudemetchisameza@128.140.85.215:~/repos/myproject.git
+  git remote -v
+origin-ssh 
+git push origin-ssh master
+ git clone https://github.com/ClaudePaola6/PP1.git
+ git checkout -b feature-1
+ git merge feature-1
 
+ Updating d7e24b7..e9514f5
+Fast-forward
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
 ---
 
 ### Task 3: GitHub & THGA GitLab
@@ -91,7 +120,14 @@ In this exercise you will:
 ```bash
 # Paste here the remote‐adding & push outputs
 ```
+git remote add github  git@github.com:ClaudePaola6/myproject-gh.git
+ git remote add gitlab  git@gitlab.thga.de:claude.metchi-sameza/myproject-gl.git
+  git remote -v
 
+  github  git@github.com:ClaudePaola6/myproject-gh.git (fetch)
+github  git@github.com:ClaudePaola6/myproject-gh.git (push)
+gitlab  git@gitlab.thga.de:claude.metchi-sameza/myproject-gl.git (fetch)
+gitlab  git@gitlab.thga.de:claude.metchi-sameza/myproject-gl.git (push)
 ---
 
 ### Task 4: Fork, Modify, and Pull/Merge Request
@@ -103,8 +139,8 @@ In this exercise you will:
 
 **Your PR/MR Links & Descriptions**
 
-* GitHub PR: *paste URL and a one-sentence summary*
-* GitLab MR: *paste URL and a one-sentence summary*
+* GitHub PR: *[[paste URL and a one-sentence summary](https://github.com/ClaudePaola6/301394c2-6efb-4677-aaff-47091fb8145d)]*
+* GitLab MR: *[paste URL and a one-sentence summary](https://gitlab.thga.de/claude.metchi-sameza/ausarbeit)*
 
 ---
 
